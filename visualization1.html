@@ -1,0 +1,150 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alzhiemers Disease Prediction</title>
+
+<style>
+/* Navigation bar CSS Starts #Test */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.centerElement {
+	padding: 5px 10px;
+	width: 300px;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%);
+	text-align:center;
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FF0000;
+  color: white;
+}
+</style>
+
+<script>
+function myFunction() {
+  //alert("Page is loaded");
+}
+</script>
+</head>
+
+
+{% if(query_ret == 1) %}
+<body style="color:white;background-position: right top;background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('templates/red.png');background-size:cover; "></body>
+{% else %}
+<body style="color:white;background-position: right top;background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),url('templates/red.png');background-size:cover; "></body>
+{% endif %}
+<div class="topnav">
+	<a href="http://127.0.0.1:5000/index.html">Home</a>
+	<a href="http://127.0.0.1:5000/train.html">Train</a>
+	<a href="http://127.0.0.1:5000/predict.html">Predict</a>
+	<a class="active" href="http://127.0.0.1:5000/visualization1.html">Visualize</a>
+	
+</div>
+
+
+<h1 style="text-align:center;font-size:50px;">Visualize the data</h1>
+	<form style="margin: 0 auto;width: 50px;" method="POST" action="http://127.0.0.1:5000/visualization1.html">
+		<br><br>
+		<p style="text-align:center;font-size:25px;position:absolute;left:45%">Select SEX</p>
+        <br><br><br><br>
+		<select name="SEX" class="centerElement" style="font-size:20px;display:inline-block;position:absolute;left:50%;">
+		<option style="font-size:20px;" name=""></option>
+		<option style="font-size:20px;" value="1">Male</option>
+		<option style="font-size:20px;" value="2">Female</option>
+    </select>    
+
+
+
+
+
+		<br><br><br><br>
+		<p style="text-align:center;font-size:25px;position:absolute;left:30%;">Select MMSE score</p>
+		<p style="text-align:center;font-size:25px;position:absolute;left:60%;">Select CDR score</p>
+       	<br><br><br><br>
+		<select name="NACCMMSE" class="centerElement" style="font-size:20px;display:inline-block;position:absolute;left:35%;" required="">
+			<option style="font-size:20px; " name=""></option>
+			<option style="font-size:20px; " name="0">0</option>
+			<option style="font-size:20px; " name="1">1</option>
+			<option style="font-size:20px; " name="2">2</option>
+			<option style="font-size:20px; " name="3">3</option>
+			<option style="font-size:20px; " name="4">4</option>
+			<option style="font-size:20px; " name="5">5</option>
+			<option style="font-size:20px; " name="6">6</option>
+			<option style="font-size:20px; " name="7">7</option>
+			<option style="font-size:20px; " name="8">8</option>
+			<option style="font-size:20px; " name="9">9</option>
+			<option style="font-size:20px; " name="10">10</option>
+            <option style="font-size:20px; " name="11">11</option>
+            <option style="font-size:20px; " name="12">12</option>
+            <option style="font-size:20px; " name="13">13</option>
+            <option style="font-size:20px; " name="14">14</option>
+            <option style="font-size:20px; " name="15">15</option>
+            <option style="font-size:20px; " name="16">16</option>
+            <option style="font-size:20px; " name="17">17</option>
+            <option style="font-size:20px; " name="18">18</option>
+            <option style="font-size:20px; " name="19">19</option>
+            <option style="font-size:20px; " name="20">20</option>
+            <option style="font-size:20px; " name="21">21</option>
+            <option style="font-size:20px; " name="22">22</option>
+            <option style="font-size:20px; " name="23">23</option>
+            <option style="font-size:20px; " name="24">24</option>
+            <option style="font-size:20px; " name="25">25</option>
+            <option style="font-size:20px; " name="26">26</option>
+            <option style="font-size:20px; " name="27">27</option>
+            <option style="font-size:20px; " name="28">28</option>
+            <option style="font-size:20px; " name="29">29</option>
+            <option style="font-size:20px; " name="30">30</option>
+		</select>
+		<select name="CDRGLOB" class="centerElement" style="font-size:20px;display:inline-block;position:absolute;left:65%;">
+			<option style="font-size:20px;" name=""></option>
+            <option style="font-size:20px;" name="0">0</option>
+			<option style="font-size:20px;" name="0.5">0.5</option>
+			<option style="font-size:20px;" name="1">1</option>
+			<option style="font-size:20px;" name="1.5">1.5</option>
+			<option style="font-size:20px;" name="2">2</option>
+			<option style="font-size:20px;" name="2.5">2.5</option>
+			<option style="font-size:20px;" name="3">3</option>
+		</select>
+	<br><br><br><br><br><br>
+
+
+
+	<button style="font-size:25px;color:white;background-color:Purple;border:0;padding:12px 100px;width:500px;left:50%;position:relative;transform:translate(-50%);" type="submit">Visualize</button>
+	</form>
+<br><br><br><br><br>
+
+
+
+{% if(query_ret == 1) %}
+<div class="printvis"></div>
+
+<img src="{{ filename }}" alt="Image">
+
+{%endif%}
+<br><br><br><br><br><br>
+
+
+
+</body>
+</html>

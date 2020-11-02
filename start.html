@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Information of System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+
+<!-- Header -->
+<header class="w3-container w3-white w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo w3-text-black ">Alzhiemers Disease Prediction System</h1>
+
+<img src="https://wfneurology.org/public/images/E_FB3/iStock-1168180474_brain%20network.jpg" alt="pic" />
+
+<p class="w3-text-black w3-xxxlarge" > About This System </p>
+<p class="w3-text-black w3-xlarge"> Alzhiemers Disease prediction system is designed for three main functionalities namely Train, Predict, Visualize. </p>
+<p class="w3-text-black w3-xlarge">Functionality number 1 is to train the system to predict or visualize the level of disease by uploading a data set. CSV (comma spaced values) is the only format accepted by the system, for updating the data set. This system is trained using the LightGBM classification algorithm.  </p>
+<p class="w3-text-black w3-xlarge">Functionality number 2 of the system is to predict the level of Alzheimer's Disease of a person by giving the certain inputs like race, sex, smoking, drinking, heart attack and some more feature input values are given for the system to predict the Level of Disease. First, users need to select predict option from the home page and then gets redirected to the prediction page and asks to fill the mandatory values. </p> 
+<p class="w3-text-black w3-xlarge">Functionality number 3 of the system is to visualize the level of Disease for the whole data depending on their level of impairments. First, users needs to select the SEX, CDR score, MMSE score and have to click on visualize button, then the result is obtained on the same screen showing that percentage of the total count of the people on the vertical axis and combination of all the three features i.e., combination sex, cdr score values and mmse score values on the horizontal axis.</p> 
+
+
+<p class="w3-xlarge"></p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.location.href = 'http://127.0.0.1:5000/index.html';"x>Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1></h1>
+      <h5 class="w3-padding-32"></h5>
+
+      <p class="w3-text-grey"></p>
+    </div>
+
+    <div class="w3-third w3-center">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      
+    </div>
+
+    <div class="w3-twothird">
+      <h1></h1>
+      <h5 class="w3-padding-32"></h5>
+
+      <p class="w3-text-grey"></p>
+    </div>
+  </div>
+</div>
+
+<div 
+    <h1 class="w3-margin w3-xlarge"></h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+
+ <p> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
