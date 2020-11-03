@@ -1,4 +1,4 @@
-# Alzhimers-disease-prediction
+# Alzheimer's-disease-prediction
 # Predection of disease for the person depending on other diseases.
 Alzheimer's Disease (AD), is an irreparable brain disease, impairs thinking and memory while the aggregate mind size shrinks which at last prompts demise. Early diagnosis of AD is essential for the progress of more prevailing treatments. Using machine learning (ML), this disease can be predicted early by using different attribute of the disease. As a result of using ML in the medical field, this dementia has been noticed early and be diagnosed easily.
 
